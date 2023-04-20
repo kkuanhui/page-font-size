@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Font Size</title>
+  <link rel="stylesheet" href="./xx-large.css">
+  <link rel="stylesheet" href="./x-large.css">
+  <link rel="stylesheet" href="./large.css">
+  <link rel="stylesheet" href="./medium.css">
+  <link rel="stylesheet" href="./small.css">
+  <link rel="stylesheet" href="./x-small.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+  <div id="root">
+
+    <h1>
+      Page Font Size
+    </h1>
+
+    <div id="current-window-width-pxratio" class="block"></div>
+
+    <ul id="break-point-list" class="block">
+      <li id="x-small" class="break-point">X-small: 576px</li>
+      <li id="small" class="break-point">Samll: 768px</li>
+      <li id="medium" class="break-point">Medium: 992px</li>
+      <li id="large" class="break-point">Large: 1200px</li>
+      <li id="x-large" class="break-point">X-Large: 1400px</li>
+      <li id="xx-large" class="break-point">XX-Large: ∞</li>
+    </ul>
+
+    <div class="block">
+
+      <div class="block">
+        <h1>
+          font size: 12px
+        </h1>
+        <div>12px 在任何寬度都適合</div>
+        <div class="text-block" style="font-size: 12px">
+          12px 在任何畫面寬度下，都顯得比較小。適合用在比內容的呈現優先順序更低的資訊上，例如補充的資訊。不建議應用在內容文字的大小。
+        </div>
+      </div>
+
+      <div class="block">
+        <h1>
+          font size: 16px
+        </h1>
+        <div>16px 在任何寬度都適合</div>
+        <div class="text-block" style="font-size: 16px">
+          16px 在任何寬度下都保有可讀性。在 x-small 適合作為子標題或內容來使用。在寬度 small 以上的畫面則只適合應用在內容文字上。
+        </div>
+      </div>
+
+      <div class="block">
+        <h1>
+          font size: 24px
+        </h1>
+        <div>24px 展示</div>
+        <div class="text-block" style="font-size: 24px">
+          24px。範例文字：我在蘭嶼天氣晴。飛魚真好吃。暈船不舒服。
+          <br>123456789 ABCDEFG abcdefg
+        </div>
+      </div>
+
+      <div class="block">
+        <h1>
+          font size: 32px
+        </h1>
+        <div>32px 在任何寬度都適合</div>
+        <div class="text-block" style="font-size: 32px">
+          32px。範例文字：我在蘭嶼天氣晴。飛魚真好吃。暈船不舒服。
+          <br>123456789 ABCDEFG abcdefg
+        </div>
+      </div>
+
+      <div class="block">
+        <h1>
+          font size: 1vw (1vw = <span id="example-1"></span>px)
+        </h1>
+        <div>1vw 的放大速度太慢</div>
+        <div class="text-block" style="font-size: 1vw">
+          當畫面寬度到 1600px 時，1vw 才會等於 16px。表示在任何畫面寬度下，1vw 都會產生比較小的字體。只有在桌上螢幕才具有可讀性。
+        </div>
+      </div>
+
+      <div class="block">
+        <h1>
+          font size: 2vw (2vw = <span id="example-2"></span>px)
+        </h1>
+        <div>2vw 在 medium 以上有理想的放大速度，在 small 以下則不建議使用</div>
+        <div class="text-block" style="font-size: 2vw">
+          當畫面寬度到 1600px 時，1vw 才會等於 16px。表示在任何畫面寬度下，1vw 都會產生比較小的字體。只有在桌上螢幕才具有可讀性。
+        </div>
+      </div>
+
+      <div class="block">
+        <h1>
+          font size: 3vw (3vw = <span id="example-3"></span>px)
+        </h1>
+        <div>3vw 則在 small 以下有很理想的放大速度，在 medium 放大速度稍快，可依使用情境選用</div>
+        <div class="text-block" style="font-size: 3vw">
+          3vw 則在 small 以下有很理想的放大速度，在 medium 放大速度稍快，可依使用情境選用。
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
