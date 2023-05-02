@@ -28,16 +28,16 @@ function onWindowSizeChange() {
   const r = window.devicePixelRatio;
   const c = `Page Width ${w}px, pixel ratio is ${r}`;
   document.getElementById("current-window-width-pxratio").innerHTML = c;
-  document.getElementById("example-1").innerHTML = (w * 0.01).toFixed(2);
-  document.getElementById("example-2").innerHTML = (w * 0.02).toFixed(2);
-  document.getElementById("example-3").innerHTML = (w * 0.03).toFixed(2);
-  document.getElementById("example-4").innerHTML = (w * 0.04).toFixed(2);
-  document.getElementById("example-5").innerHTML = (w * 0.05).toFixed(2);
-  document.getElementById("example-6").innerHTML = (w * 0.06).toFixed(2);
-  document.getElementById("example-7").innerHTML = (w * 0.07).toFixed(2);
-  document.getElementById("example-8").innerHTML = (w * 0.08).toFixed(2);
-  document.getElementById("example-9").innerHTML = (w * 0.09).toFixed(2);
-  document.getElementById("example-10").innerHTML = (w * 0.1).toFixed(2);
+  document.getElementById("example-1").innerHTML  = (w * 0.01).toFixed(2);
+  document.getElementById("example-2").innerHTML  = (w * 0.02).toFixed(2);
+  document.getElementById("example-3").innerHTML  = (w * 0.03).toFixed(2);
+  // document.getElementById("example-4").innerHTML  = (w * 0.04).toFixed(2);
+  // document.getElementById("example-5").innerHTML  = (w * 0.05).toFixed(2);
+  // document.getElementById("example-6").innerHTML  = (w * 0.06).toFixed(2);
+  // document.getElementById("example-7").innerHTML  = (w * 0.07).toFixed(2);
+  // document.getElementById("example-8").innerHTML  = (w * 0.08).toFixed(2);
+  // document.getElementById("example-9").innerHTML  = (w * 0.09).toFixed(2);
+  document.getElementById("example-10").innerHTML = (w * 0.10).toFixed(2);
 
   if (w < xSmall) {
     changeBgColor('x-small')
